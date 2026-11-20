@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- 여기에 PlayerLibrary URL을 넣어 주시면 됩니다.-->
+	<script src="https://player.vpe.gov-ntruss.com/ncplayer.js?access_key=a9100ca4965f7c41e0bdb0286ef752e0"></script>
+    <title>Video Player 재생 테스트</title>
+    <style>
+      h3 {
+        word-break: break-all;
+      }
+    </style>
+  </head>
+  <body>	
+	<h3>0620 테스트영상
+	<div id="lsPlayer" style="width: 300px"></div>
+    <script>
+      
+      new ncplayer('lsPlayer', {
+        playlist:[
+			{
+				file:"https://m4qgahqg2249.edge.naverncp.com/hls/a4oif2oPHP-HlGGWOFm29A__/endpoint/sample/221027_NAVER_Cloud_intro_Long_ver_AVC_,FHD_2Pass_30fps,HD_2Pass_30fps,SD_2Pass_30fps,.mp4.smil/master.m3u8",
+				poster:"https://2ardrvaj2252.edge.naverncp.com/endpoint/sample/221027_NAVER_Cloud_intro_Long_ver_01.jpg",
+				description:{
+					"title":"네이버클라우드 테스트 영상",
+					"created_at":"Wed Jul 13 2022 00:00:00 GMT+0900 (한국 표준시)",
+					"profile_name":"네이버클라우드",
+					"profile_image":"https://nnbkegvqsbcu5297614.cdn.ntruss.com/profile/202208/d127c8db642716d84b3201f1d152e52a.png"
+				},
+				
+			},
+		],
+	
+      });
+    </script>
+  </body>
+</html>
